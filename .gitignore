@@ -1,0 +1,8 @@
+.vs
+obj
+Debug
+Release
+x64
+*.filters
+*.user
+*.tmp
