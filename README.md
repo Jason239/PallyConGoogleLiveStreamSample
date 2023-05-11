@@ -75,4 +75,5 @@ bool PallyConKmsClientWrapper::getPackagingInfoFromKmsServer(String^ content_id,
 - https://cloud.google.com/livestream/docs/reference/libraries
 - https://cloud.google.com/secret-manager/docs/reference/libraries#client-libraries-install-csharp
 - https://cloud.google.com/livestream/docs/reference/drm#string
+- https://cloud.google.com/docs/authentication/provide-credentials-adc
 ---------------------------------------
