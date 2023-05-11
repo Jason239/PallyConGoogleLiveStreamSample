@@ -13,12 +13,14 @@ namespace PallyCon
     {
         static async Task Main(string[] args)
         {
-            string pallyconKmsUrl = "<pallycon-kms-url>";
+            string pallyconKmsUrl = "https://kms.pallycon.com/v2/cpix/pallycon/getKey/";
             string pallyconEncToken = "<pallycon-enc-token>";
             string contentId = "<content-id>";
             string projectId = "<your-project-id>";
-            string outputBucketUri = "<your-bucket-uri>"; // e.g.) gs://<bucket_name>/path/to/output
-            string locationId = "<your-location-id>";
+            string outputBucketUri = "<your-bucket-uri>";   // e.g.) gs://<bucket_name>/path/to/output
+            string locationId = "<your-location-id>";       // e.g.) asia-northeast3
+
+            // Resource id for each.
             // Each ID cannot be duplicated, so if you create one, you must delete it to create another with the same ID.
             string inputId = "pallycon-sample-input";
             string channelId = "pallycon-sample-channel";
