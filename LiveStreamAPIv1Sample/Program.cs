@@ -18,7 +18,11 @@ namespace PallyCon
             string contentId = "<content-id>";
             string projectId = "<your-project-id>";
             string outputBucketUri = "<your-bucket-uri>";   // e.g.) gs://<bucket_name>/path/to/output
-            string locationId = "<your-location-id>";       // e.g.) asia-northeast3
+            // Region for Live Stream API input Endpoint.
+            // For the best performance results, make sure you create your input endpoint and channel as close as possible
+            // to the location where the live stream files are stored in Cloud Storage.
+            // See the following link for the regions you can set up. https://cloud.google.com/livestream/docs/locations#regions
+            string locationId = "<your-location-id>";
 
             // Resource id for each.
             // Each ID cannot be duplicated, so if you create one, you must delete it to create another with the same ID.
