@@ -47,9 +47,12 @@ namespace PallyCon
                 Console.WriteLine("RTMP input endpoint uri : " + input.Uri);
 
                 // Create and start a channel
+                Console.WriteLine("Creating a channel...");
                 Channel channel = await liveStreamAPIClient.CreateChannelAsync(channelId, inputId, outputBucketUri, secretVersion.Name, 
                     widevineMuxStreams, playreadyMuxStreams, fairplayMuxStreams);
+                Console.WriteLine("Starting a channel...");
                 await liveStreamAPIClient.StartChannelAsync(channelId);
+                Console.WriteLine("Channel starting is done.");
 
                 channel = liveStreamAPIClient.GetChannel(channelId);
                 string streamingState = channel.StreamingState.ToString();
