@@ -12,6 +12,8 @@ This sample shows how to integrate PallyCon Multi DRM with Google Cloud Live Str
 - Google Cloud account : https://cloud.google.com/
   - Create a project : https://cloud.google.com/resource-manager/docs/creating-managing-projects
   - Create a bucket : https://cloud.google.com/storage/docs/creating-buckets
+- Google Application Default Credentials(ADC) : https://cloud.google.com/docs/authentication/provide-credentials-adc
+
 - KMS token used for CPIX API communication with PallyCon KMS. This is an API authentication token that is generated when you sign up PallyCon service, and can be found on the PallyCon Console site.
 - Encoder to generate the input stream that the API processes.
 
@@ -75,5 +77,4 @@ bool PallyConKmsClientWrapper::getPackagingInfoFromKmsServer(String^ content_id,
 - https://cloud.google.com/livestream/docs/reference/libraries
 - https://cloud.google.com/secret-manager/docs/reference/libraries#client-libraries-install-csharp
 - https://cloud.google.com/livestream/docs/reference/drm#string
-- https://cloud.google.com/docs/authentication/provide-credentials-adc
 ---------------------------------------
